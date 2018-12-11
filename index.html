@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
     <title>Amplience videoplayer | Carhartt demo</title>
-      <link rel="stylesheet" href="css/amplience-sdk-client.css" type="text/css"/>
-      <script data-amp-include-js="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <script data-amp-include-js="" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-      <script data-amp-include-js="" src="js/video-js/video.min.js"></script>
-      <script data-amp-include-js="" src="js/amplience-sdk-client.min.js"></script>
+    <link rel="stylesheet" href="css/amplience-sdk-client.css" type="text/css"/>
+    <link rel="stylesheet" href="css/video-js.min.css" type="text/css"/>
 
+    <script data-amp-include-js="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script data-amp-include-js=""
+            src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script data-amp-include-js="" src="js/video-js/video.min.js"></script>
+    <script data-amp-include-js="" src="js/amplience-sdk-client.min.js"></script>
+</head>
+<body>
+<div id="video">
+    <video>
 
+        <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/webm_480p?4" data-res="Medium"
+                data-bitrate="571" type="video/webm; codecs=vp8">
+        <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/webm_240p?4" data-res="Low"
+                data-bitrate="308" type="video/webm; codecs=vp8">
+        <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/mp4_480p?4" data-res="Medium"
+                data-bitrate="571" type="video/mp4">
+        <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/mp4_240p?4" data-res="Low"
+                data-bitrate="308" type="video/mp4">
 
-  </head>
-  <body>
-  	This is the amplience video player:<br/>
-
-
-    <div id="video">
-        <video poster="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE">
-
-            <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/webm_480p?4" data-res="Medium" data-bitrate="571" type="video/webm; codecs=vp8">
-            <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/webm_240p?4" data-res="Low" data-bitrate="308" type="video/webm; codecs=vp8">
-            <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/mp4_480p?4" data-res="Medium" data-bitrate="571" type="video/mp4">
-            <source src="https://i1.adis.ws/v/carhartt_wip/cw46_wip_mag_2_launch_FRONTPAGE/mp4_240p?4" data-res="Low" data-bitrate="308" type="video/mp4">
-
-        </video>
-    </div>
-
+    </video>
+</div>
 <script>
     $('#video').ampVideo({
         width: 16,
         height: 9,
-        loop:true,
-        autoplay:true,
-        controls: false
+        controls: false,
+        loop: true,
+        autoplay: true,
+
     });
 </script>
-  </body>
+</body>

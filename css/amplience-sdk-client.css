@@ -1,12 +1,4 @@
-
-#container{
+#video{
   width:80%;
   margin:auto;
-}
-#overlay{
-  position:absolute;
-  top:20px;
-  left:20px;
-  font-family:Helvetica,Verdana,Arial;
-  color:#535353;
 }
